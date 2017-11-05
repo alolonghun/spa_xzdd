@@ -1,0 +1,123 @@
+/*
+ * @Author: smallke 
+ * @Date: 2017-07-25 17:41:27 
+ * @Last Modified by: smallke
+ * @Last Modified time: 2017-07-25 18:05:58
+ */
+
+.my-page {
+    background-color: #f7f7f7;
+    min-height: 100vh;
+}
+
+.user {
+    position: relative;
+    width: 100%;
+    height: 3.5833rem;
+    background-color: #359dda;
+    padding: 0.6389rem 0.7778rem 0.6528rem 3.2222rem;
+    .avater {
+        position: absolute;
+        top: 0.5694rem;
+        left: 0.6389rem;
+        width: 2.1806rem;
+        height: 2.1806rem;
+        border-radius: 100%;
+        @include bg-cover;
+        border: 4px solid #fff;
+    }
+    .name {
+        color: #ffffff;
+        font-size: 0.4583rem;
+        font-weight: 400;
+        line-height: 1;
+        @include text-overflow;
+        text-align: left;
+        .icn-vip {
+            margin-left: 0.1389rem;
+        }
+    }
+    .dec {
+        padding-top: 0.3333rem;
+        color: #ffffff;
+        font-size: 0.3611rem;
+        font-weight: 400;
+        line-height: 0.4583rem;
+        @include text-overflow-line(3);
+    }
+    .vip {
+        position: absolute;
+        left: 3.2083rem;
+        bottom: 0.5556rem;
+        width: 2.4444rem;
+        height: 0.8194rem;
+        color: #ffffff;
+        font-size: 0.3889rem;
+        line-height: 0.8194rem;
+        text-align: center;
+        border-radius: 2px;
+        background-color: #ffa627;
+    }
+}
+
+.menu {
+    margin-top: 0.3333rem;
+    background-color: #fff;
+    .item {
+        height: 1.4722rem;
+        line-height: 1.4722rem;
+        padding: 0px 0.4861rem;
+        border-bottom: 1px solid #dddddd;
+        &:last-child {
+            border: none;
+        }
+        .name {
+            font-size: 0.4167rem;
+            color: #333333;
+            padding-left: 0.3333rem;
+        }
+        &:after {
+            float: right;
+            display: block;
+            content: "";
+            width: 0.1944rem;
+            height: 1.4722rem;
+            font-size: 0px;
+            @include bg-contain;
+            background-image: url($image+'/icn_right.png');
+        }
+    }
+    .icn-menu {
+        position: relative;
+        top: -2px;
+        display: inline-block;
+        vertical-align: middle;
+        @include bg-contain;
+        font-size: 0px;
+        &.icn-dy {
+            width: 0.5833rem;
+            height: 0.4861rem;
+            background-image: url($image+'/icn_menu_dy.png');
+        }
+        &.icn-sc {
+            width: 0.6389rem;
+            height: 0.5972rem;
+            background-image: url($image+'/icn_menu_sc.png');
+        }
+        &.icn-hd {
+            width: 0.5556rem;
+            height: 0.5556rem;
+            background-image: url($image+'/icn_menu_hd.png');
+        }
+        &.icn-bb {
+            width: 0.5278rem;
+            height: 0.5972rem;
+            background-image: url($image+'/icn_menu_bb.png');
+        }
+        &.icn-cz {
+            width: 0.6389rem;
+            height: 0.6389rem;
+            background-image: url($image+'/icn_menu_cz.png');
+        }
+    }
+}

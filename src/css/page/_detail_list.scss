@@ -1,0 +1,67 @@
+.wz-detail-list{
+	padding: 1% 0;
+	.wz-dlist{
+		padding-bottom: 40%;
+		background-color: #f7f7f7;
+		margin: 3%;
+		@include bg-cover;
+		position: relative;
+		border-radius: 3px;
+		overflow: hidden;
+		.wz-list-text{
+			color: #fff;
+			line-height: 1.2;
+			width: 90%;
+			position: absolute;
+			left: 5%;
+			top: 28%;
+			text-align: center;
+			z-index: 2;
+			.wz-list-title{
+				font-size: .5rem;
+				letter-spacing: 1px;
+				margin-bottom: 6px;
+			}
+			.wz-list-explain{
+				font-size: .9em;
+				letter-spacing: 2px;
+			}
+		}
+		.wz-list-mask{
+			background-color: rgba(0,0,0,0.6);
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			left: 0;
+			top: 0;
+		}
+		.wz-shoucang{
+			background-color: rgba(255,255,255,0.1);
+			width: 2rem;
+			height: .8rem;
+			position: absolute;
+			z-index: 3;
+			bottom: 6px;
+			right: 0;
+			border-top-left-radius: .4rem;
+			border-bottom-left-radius: .4rem;
+			.wz-shoucang-img{
+				width: .4rem;
+				margin: .15rem .05rem .15rem .25rem;
+				vertical-align: middle;
+			}
+			.wz-collection{
+				vertical-align: middle;
+				color: #ffbc46;
+				display: inline-block;
+				height: 100%;
+				font-size: 1.2em;
+				line-height: .8rem;
+			}
+		}
+	}
+}
+.wz-list-no-more{
+	border-top: 1px solid #f5f5f5;
+	margin: 0 3%;
+}

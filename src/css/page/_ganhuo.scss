@@ -1,0 +1,552 @@
+/*
+ * @Author: smallke 
+ * @Date: 2017-07-25 17:44:33 
+ * @Last Modified by: smallke
+ * @Last Modified time: 2017-07-27 01:30:12
+ */
+
+.swiper {
+  width: 100%;
+  height: 4.5rem;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 0;
+  background: #fff;
+  display: flex;
+  .avatar {
+    width: 100%;
+    @include bg-cover;
+  }
+}
+
+.m-title {
+  padding: 0.4267rem 0px;
+  color: #333333;
+  font-size: 0.56rem;
+  font-weight: 500;
+  line-height: 0.56rem;
+  text-align: center;
+  &:before,
+  &:after {
+    display: inline-block;
+    margin: 0px 0.6667rem;
+    content: "";
+    width: 0.8rem;
+    height: 1px;
+    background-color: #333;
+    vertical-align: middle;
+  }
+}
+
+.m-lesson {
+  .item {
+    position: relative;
+    height: 2.6533rem;
+    padding: 0.3333rem 0.3067rem 0.2933rem 3.0933rem;
+    border-bottom: 1px solid #dddddd;
+  }
+  .avatar {
+    position: absolute;
+    left: 0.2933rem;
+    top: 0.3333rem;
+    width: 2.3467rem;
+    height: 2.0267rem;
+    @include bg-cover;
+    .tag {
+      position: absolute;
+      left: -0.19rem;
+      top: -0.06rem;
+      width: 1.53rem;
+      height: 0.49rem;
+      color: #ffffff;
+      font-size: 0.3333rem;
+      line-height: 0.49rem;
+      text-align: center;
+      transform: scale(0.75);
+      &.tag-free {
+        background-color: #46a3dc;
+      }
+      &.tag-sale {
+        background-color: #ffa627;
+      }
+      &.tag-not {
+        background-color: #d14f39;
+      }
+    }
+  }
+  .info {
+    .title {
+      color: #000000;
+      font-size: 0.44rem;
+      line-height: 0.6933rem;
+      padding-right: 1.3333rem;
+      @include text-overflow;
+    }
+    .dec {
+      padding-top: 4px;
+      color: #a3a3a3;
+      font-size: 0.3467rem;
+      line-height: 0.44rem;
+      @include text-overflow-line(2);
+    }
+  }
+  .action {
+    position: absolute;
+    left: 3.0933rem;
+    bottom: 0.2133rem;
+    color: #a3a3a3;
+    font-size: 0.3733rem;
+    font-weight: 400;
+    line-height: 0.3733rem;
+    .em {
+      display: inline-block;
+      padding-right: 18px;
+      color: #a3a3a3;
+      font-size: 0.3733rem;
+      font-weight: 400;
+      line-height: 0.3733rem;
+      vertical-align: middle;
+    }
+    .u-icn {
+      margin-right: 0.16rem;
+      vertical-align: middle;
+    }
+  }
+  .price {
+    position: absolute;
+    right: 0.32rem;
+    bottom: 0.2133rem;
+    color: #359dda;
+    font-size: 0.32rem;
+    font-weight: 400;
+    line-height: 0.5rem;
+    i {
+      color: #359dda;
+      font-size: 0.44rem;
+      font-weight: 700;
+      padding-right: 0.1333rem;
+      line-height: 0.44rem;
+      vertical-align: top;
+      &.free {
+        font-size: 0.3733rem;
+        font-weight: 300;
+      }
+    }
+    &.purchased {
+      color: #a3a3a3;
+      font-size: 0.32rem;
+      font-weight: 400;
+    }
+  }
+  .badge {
+    display: block;
+    position: absolute;
+    top: 0.4rem;
+    right: 0.32rem;
+    width: 0.9333rem;
+    height: 0.4667rem;
+    line-height: 0.4267rem;
+    border-radius: 2px;
+    border: 1px solid #f2725e;
+    text-align: center;
+    color: #f2725e;
+    font-size: 0.32rem;
+    font-weight: 400;
+  }
+  .no-more {
+    color: #a3a3a3;
+    font-size: 0.3733rem;
+    font-weight: 400;
+    line-height: 1.2533rem;
+    text-align: center;
+  }
+  &.dk {
+    .item {
+      position: relative;
+      height: 3.0667rem;
+      padding: 0.3867rem 1.16rem 0.32rem 2.8133rem;
+      border-bottom: 1px solid #dddddd;
+    }
+    .avatar {
+      position: absolute;
+      left: 0.2933rem;
+      top: 0.3333rem;
+      width: 2.0267rem;
+      height: 2.4267rem;
+      @include bg-cover;
+    }
+  }
+  &.link {
+    .item {
+      &:after {
+        position: absolute;
+        right: 0.4667rem;
+        top: 50%;
+        margin-top: -0.1733rem;
+        display: block;
+        content: "";
+        width: 0.1867rem;
+        height: 0.3467rem;
+        font-size: 0px;
+        @include bg-contain;
+        background-image: url($image+'/icn_right.png');
+      }
+      .info {
+        padding-right: 0.4rem;
+      }
+    }
+  }
+}
+
+//collect
+.u-tabs {
+  height: 1.52rem;
+  background-color: #ffffff;
+  text-align: center;
+  .tab {
+    display: inline-block;
+    width: 2.3467rem;
+    font-size: 0.44rem;
+    font-weight: 500;
+    line-height: 1.4667rem;
+    color: #333333;
+    margin: 0 0.9867rem;
+    &.active {
+      color: #3694cb;
+      border-bottom: 2px solid #3694cb;
+    }
+  }
+}
+
+.diviler {
+  height: 0.3467rem;
+  background-color: #f7f7f7;
+}
+
+
+/*
+ * @Author: smallke 
+ * @Date: 2017-07-25 17:44:33 
+ * @Last Modified by: smallke
+ * @Last Modified time: 2017-07-26 02:10:36
+ */
+
+.swiper {
+  width: 100%;
+  height: 4.5rem;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 0;
+  background: #fff;
+  display: flex;
+  .avatar {
+    width: 100%;
+    @include bg-cover;
+  }
+}
+
+.m-title {
+  padding: 0.4267rem 0px;
+  color: #333333;
+  font-size: 0.56rem;
+  font-weight: 500;
+  line-height: 0.56rem;
+  text-align: center;
+  &:before,
+  &:after {
+    display: inline-block;
+    margin: 0px 0.6667rem;
+    content: "";
+    width: 0.8rem;
+    height: 1px;
+    background-color: #333;
+    vertical-align: middle;
+  }
+}
+
+.m-lesson {
+  .item {
+    position: relative;
+    height: 2.6533rem;
+    padding: 0.3333rem 0.3067rem 0.2933rem 3.0933rem;
+    border-bottom: 1px solid #dddddd;
+  }
+  .avatar {
+    position: absolute;
+    left: 0.2933rem;
+    top: 0.3333rem;
+    width: 2.3467rem;
+    height: 2.0267rem;
+    @include bg-cover;
+    .tag {
+      position: absolute;
+      left: -0.19rem;
+      top: -0.06rem;
+      width: 1.53rem;
+      height: 0.49rem;
+      color: #ffffff;
+      font-size: 0.3333rem;
+      line-height: 0.49rem;
+      text-align: center;
+      transform: scale(0.75);
+      &.tag-free {
+        background-color: #46a3dc;
+      }
+      &.tag-sale {
+        background-color: #ffa627;
+      }
+      &.tag-not {
+        background-color: #d14f39;
+      }
+    }
+  }
+  .info {
+    .title {
+      color: #000000;
+      font-size: 0.44rem;
+      line-height: 0.6933rem;
+      padding-right: 1.3333rem;
+      @include text-overflow;
+    }
+    .dec {
+      padding-top: 4px;
+      color: #a3a3a3;
+      font-size: 0.3467rem;
+      line-height: 0.44rem;
+      @include text-overflow-line(2);
+    }
+  }
+  .action {
+    position: absolute;
+    left: 3.0933rem;
+    bottom: 0.2133rem;
+    color: #a3a3a3;
+    font-size: 0.3733rem;
+    font-weight: 400;
+    line-height: 0.3733rem;
+    .em {
+      display: inline-block;
+      padding-right: 18px;
+      color: #a3a3a3;
+      font-size: 0.3733rem;
+      font-weight: 400;
+      line-height: 0.3733rem;
+      vertical-align: middle;
+    }
+    .u-icn {
+      margin-right: 0.16rem;
+      vertical-align: middle;
+    }
+  }
+  .price {
+    position: absolute;
+    right: 0.32rem;
+    bottom: 0.2133rem;
+    color: #359dda;
+    font-size: 0.32rem;
+    font-weight: 400;
+    line-height: 0.5rem;
+    i {
+      color: #359dda;
+      font-size: 0.44rem;
+      font-weight: 700;
+      padding-right: 0.1333rem;
+      line-height: 0.44rem;
+      vertical-align: top;
+      &.free {
+        font-size: 0.3733rem;
+        font-weight: 300;
+      }
+    }
+    &.purchased {
+      color: #a3a3a3;
+      font-size: 0.32rem;
+      font-weight: 400;
+    }
+  }
+  .badge {
+    display: block;
+    position: absolute;
+    top: 0.4rem;
+    right: 0.32rem;
+    width: 0.9333rem;
+    height: 0.4667rem;
+    line-height: 0.4267rem;
+    border-radius: 2px;
+    border: 1px solid #f2725e;
+    text-align: center;
+    color: #f2725e;
+    font-size: 0.32rem;
+    font-weight: 400;
+  }
+  .no-more {
+    color: #a3a3a3;
+    font-size: 0.3733rem;
+    font-weight: 400;
+    line-height: 1.2533rem;
+    text-align: center;
+  }
+}
+
+//collect
+.u-tabs {
+  height: 1.52rem;
+  background-color: #ffffff;
+  text-align: center;
+  .tab {
+    display: inline-block;
+    width: 2.3467rem;
+    font-size: 0.44rem;
+    font-weight: 500;
+    line-height: 1.4667rem;
+    color: #333333;
+    margin: 0 0.9867rem;
+    &.active {
+      color: #3694cb;
+      border-bottom: 2px solid #3694cb;
+    }
+  }
+}
+
+.diviler {
+  height: 0.3467rem;
+  background-color: #f7f7f7;
+}
+.ganhuo-title{
+  margin: 0 .3067rem;
+  line-height: 1.1rem;
+  border-bottom: #f5f5f5 1px solid;
+  padding: 0 .175rem;
+  .ganhuo-title-icon{
+    width: .56rem;
+    vertical-align: middle;
+    margin-right: 0.1rem;
+  }
+  .ganhuo-title-text{
+    vertical-align: middle;
+    font-size: .365rem;
+    color: #222;
+  }
+  .ganhuo-title-fr{
+    float: right;
+    font-size: .32rem;
+    color: #a8a8a8;
+  }
+}
+.ganhuo-partiton{
+  height: 8px;
+  background-color: #f7f7f7;
+}
+.ganhuo-early-con{
+  position: relative;
+  min-height: 1.728rem;
+  @include clearfix;
+  ul{
+    margin: .26rem 2.2rem .26rem .5rem;
+    li{
+      color: #222222;
+      line-height: 1.8;
+      font-size: .32rem;
+      &.active{
+        color: #359dda;
+        span{
+          color: #359dda;
+        }
+      }
+      @include text-overflow;
+      span{
+        color: #a8a8a8;
+        font-size: .3125rem;
+        margin-right: .2rem;
+        line-height: 1.7;
+      }
+    }
+  }
+  .ganhuo-btn{
+    width: 1rem;
+    height: 1rem;
+    position: absolute;
+    right: .7rem;
+    top: .6rem;
+  }
+}
+.cho-box{
+  @include clearfix;
+  padding: .4rem 0;
+  li{
+    float: left;
+    width: 43%;
+    background-color: #f7f7f7;
+    padding-bottom: 22.5%;
+    border-radius: 3px;
+    background-image: url(./../images/cho_1.jpg);
+    @include bg-cover;
+    &:first-of-type,&:nth-of-type(3){
+      margin: 0 2% 0 6%;
+    }
+    &:nth-of-type(3),&:nth-of-type(4){
+      margin-top: 0.2rem;
+    }
+  }
+}
+.ganhuo-revision.m-lesson {
+  .item{
+    margin: 0 .3067rem;
+    border-bottom: 1px solid #f5f5f5;
+    padding: .3333rem .3067rem .2933rem 2.5rem;
+  } 
+  .badge{
+    width: .85rem;
+    height: .4rem;
+    line-height: .375rem;
+    font-size: .28rem;
+    top: .375rem;
+  }
+  .info{
+    .title{
+      font-size: .37rem;
+      line-height: .5rem;
+    }
+    .dec{
+      font-size: .32rem;
+    }
+  }
+  .avatar{
+    left: 0;
+    width: 2.11203rem;
+    height: 1.82403rem;
+  }
+  .price{
+    bottom: .375rem;
+  }
+  .action{
+    left: 2.5rem;
+    bottom: .375rem;
+    .em{
+      padding-right: 10px;
+      font-size: .35rem;
+      .icn-view{
+        transform: scale(.9);
+        -webkit-transform: scale(.9);
+      }
+      .icn-album{
+        transform: scale(.9);
+        -webkit-transform: scale(.9);
+      }
+    }
+    .lesson-tag{
+      // display: inline-block !important;
+      margin-right: 12px;
+      border-radius: 2px;
+      border: 1px solid #fd7d00;
+      color: #fd7d00;
+      padding: 0 4px;
+      font-size: .28rem;
+      line-height: 1.2;
+    }
+  }
+}

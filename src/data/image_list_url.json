@@ -1,0 +1,35 @@
+{
+    "data": {
+        "pageNo": 1,
+        "totalPageNum": 2,
+        "pageSize": 20,
+        "totalListNum": 20,
+        "list": [{
+            "id": 1,
+            "imagePath": "http://editor.smallke.com/src/images/tmp_09.jpg"
+        }, {
+            "id": 3,
+            "imagePath": "http://editor.smallke.com/src/images/tmp_09.jpg"
+        }, {
+            "id": 2,
+            "imagePath": "http://editor.smallke.com/src/images/tmp_09.jpg"
+        }, {
+            "id": 4,
+            "imagePath": "http://editor.smallke.com/src/images/tmp_09.jpg"
+        }, {
+            "id": 1,
+            "imagePath": "http://editor.smallke.com/src/images/tmp_09.jpg"
+        }, {
+            "id": 3,
+            "imagePath": "http://editor.smallke.com/src/images/tmp_09.jpg"
+        }, {
+            "id": 2,
+            "imagePath": "http://editor.smallke.com/src/images/tmp_09.jpg"
+        }, {
+            "id": 4,
+            "imagePath": "http://editor.smallke.com/src/images/tmp_09.jpg"
+        }]
+    },
+    "status": 0,
+    "errMsg": ""
+}

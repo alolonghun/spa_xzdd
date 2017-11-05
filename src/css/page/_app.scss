@@ -1,0 +1,282 @@
+.mintui {
+  font-size: 1rem;
+}
+//btns
+.u-btn {
+  display: inline-block;
+  width: 3.3333rem;
+  height: 1.0933rem;
+  line-height: 1.0933rem;
+  border-radius: 3px;
+  background-color: #3694cb;
+  span {
+    color: #ffffff;
+    font-size: 0.44rem;
+    font-weight: 400;
+    line-height: 1.0933rem;
+    vertical-align: middle;
+  }
+}
+
+.u-icn {
+  display: inline-block;
+  vertical-align: middle;
+  @include bg-contain;
+  font-size: 0px;
+}
+
+.icn-collect {
+  position: relative;
+  top: -3px;
+  width: 0.4rem;
+  height: 0.3467rem;
+  background-image: url($image+'/icn_collect.png');
+}
+
+.icn-view {
+  position: relative;
+  top: -2px;
+  width: 0.4rem;
+  height: 0.2933rem;
+  background-image: url($image+'/icn_view.png');
+}
+
+.icn-album {
+  position: relative;
+  top: -2px;
+  width: 0.44rem;
+  height: 0.3333rem;
+  background-image: url($image+'/icn_album.png');
+}
+
+.icn-play {
+  position: relative;
+  width: 0.44rem;
+  height: 0.3333rem;
+  background-image: url($image+'/icn_play.png');
+}
+
+.icn-star {
+  position: relative;
+  width: 0.4rem;
+  height: 0.3733rem;
+  background-image: url($image+'/icn_star.png');
+}
+
+.icn-collect-white {
+  position: relative;
+  width: 0.48rem;
+  height: 0.4267rem;
+  background-image: url($image+'/icn_collect_white.png');
+}
+
+.icn-star-white {
+  position: relative;
+  top: -2px;
+  width: 0.4933rem;
+  height: 0.48rem;
+  background-image: url($image+'/icn_star_white.png');
+}
+
+.icn-radio {
+  position: relative;
+  width: 0.44rem;
+  height: 0.48rem;
+  background-image: url($image+'/icn_radio.png');
+}
+
+.icn-radio-stop {
+  position: relative;
+  width: 0.44rem;
+  height: 0.5733rem;
+  background-image: url($image+'/icn-music-stop.png');
+}
+
+.icn-time {
+  position: relative;
+  top: -2px;
+  width: 0.4rem;
+  height: 0.4rem;
+  background-image: url($image+'/icn_time.png');
+}
+
+.icn-vote {
+  position: relative;
+  width: 0.4533rem;
+  height: 0.4533rem;
+  background-image: url($image+'/icn_vote.png');
+  &.active {
+    width: 0.5067rem;
+    height: 0.5067rem;
+    background-image: url($image+'/icn_vote_active.png');
+  }
+}
+
+.no-more {
+  color: #a3a3a3;
+  font-size: 0.3733rem;
+  font-weight: 400;
+  line-height: 1.2533rem;
+  text-align: center;
+}
+
+.icn-times {
+  position: relative;
+  width: 0.4rem;
+  height: 0.4rem;
+  background-image: url($image+'/icn_times.png');
+}
+
+.icn-video {
+  position: relative;
+  width: 0.4933rem;
+  height: 0.5067rem;
+  background-image: url($image+'/icn-video.png');
+}
+
+.icn-left {
+  position: relative;
+  width: 0.4667rem;
+  height: 0.4533rem;
+  background-image: url($image+'/icn-left.png');
+}
+
+.icn-store {
+  position: relative;
+  width: 0.6667rem;
+  height: 0.64rem;
+  background-image: url($image+'/icn-store.png');
+}
+
+.icn-right {
+  position: relative;
+  width: 0.4667rem;
+  height: 0.4533rem;
+  background-image: url($image+'/icn-right.png');
+}
+
+.icn-off {
+  position: relative;
+  width: 1.3733rem;
+  height: 1.3733rem;
+  background-image: url($image+'/icn-stop.png');
+}
+
+.icn-on {
+  position: relative;
+  width: 1.3733rem;
+  height: 1.3733rem;
+  background-image: url($image+'/icn-play.jpg');
+}
+
+.icn-list {
+  position: relative;
+  width: 0.64rem;
+  height: 0.5067rem;
+  background-image: url($image+'/icn-list.png');
+}
+
+.icn-vip {
+  position: relative;
+  width: 1.28rem;
+  height: 0.5333rem;
+  background-image: url($image+'/vip.png');
+}
+
+.icn-bar-play {
+  position: relative;
+  width: 0.4rem;
+  height: 0.4rem;
+  background-image: url($image+'/icn_bar_play.png');
+}
+
+.icn-bar-stop {
+  position: relative;
+  width: 0.4rem;
+  height: 0.4rem;
+  background-image: url($image+'/icn_bar_stop.png');
+}
+
+.icn-wechat {
+  position: relative;
+  width: 0.9333rem;
+  height: 0.9333rem;
+  background-image: url($image+'/icn-wechat.png');
+}
+
+.icn-choose {
+  position: relative;
+  width: 0.56rem;
+  height: 0.4133rem;
+  background-image: url($image+'/icn-choose.png');
+}
+
+.soundbar {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 1.0667rem;
+  line-height: 1.0667rem;
+  border-bottom: 1px solid #ddd;
+  padding: 0px 1.0667rem 0px 1.48rem;
+  z-index: 99;
+  background-color: #fff;
+  .bg {
+    position: absolute;
+    left: 0.3333rem;
+    top: 0.1067rem;
+    width: 0.8667rem;
+    height: 0.8667rem;
+    border-radius: 0.8667rem;
+    @include bg-cover;
+  }
+  .txt {
+    display: block;
+    font-size: 0.32rem;
+    color: #000;
+    line-height: 1.0667rem;
+    @include text-overflow;
+  }
+  .act {
+    position: absolute;
+    left: 0.3333rem;
+    top: 0.1067rem;
+    width: 0.8667rem;
+    height: 0.8667rem;
+    border-radius: 0.8667rem;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 9;
+  }
+  .u-icn {
+    position: absolute;
+    left: 0.2933rem;
+    top: 0.2667rem;
+    width: 0.2933rem;
+    height: 0.2933rem;
+    z-index: 10;
+    &.icn-radio-stop {
+      left: 0.2933rem;
+      top: 0.2667rem;
+    }
+  }
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0.16rem;
+    right: 0.2933rem;
+    width: 0.4667rem;
+    height: 0.72rem;
+    @include bg-cover;
+    background-image: url($image+'/icn-play-now.gif');
+  }
+  &+.fixHeight {
+    height: 1.0667rem;
+  }
+}
+
+small,
+.small {
+  display: inline-block;
+  transform: scale(0.83);
+}

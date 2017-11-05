@@ -1,0 +1,36 @@
+{
+    "data": {
+        "pageNo": 1,
+        "totalPageNum": 2,
+        "pageSize": 5,
+        "totalListNum": 100,
+        "list": [{
+            "id": 1,
+            "title": "文本测试",
+            "videoPath": "http://www.zhangxinxu.com/study/media/cat.mp4",
+            "coverPath": "http://editor.smallke.com/src/images/tmp_09.jpg"
+        }, {
+            "id": 1,
+            "title": "文本测试",
+            "videoPath": "http://www.zhangxinxu.com/study/media/cat.mp4",
+            "coverPath": "http://editor.smallke.com/src/images/tmp_09.jpg"
+        }, {
+            "id": 1,
+            "title": "文本测试",
+            "videoPath": "http://www.zhangxinxu.com/study/media/cat.mp4",
+            "coverPath": "http://editor.smallke.com/src/images/tmp_09.jpg"
+        }, {
+            "id": 1,
+            "title": "文本测试",
+            "videoPath": "http://www.zhangxinxu.com/study/media/cat.mp4",
+            "coverPath": "http://editor.smallke.com/src/images/tmp_09.jpg"
+        }, {
+            "id": 1,
+            "title": "文本测试",
+            "videoPath": "http://www.zhangxinxu.com/study/media/cat.mp4",
+            "coverPath": "http://editor.smallke.com/src/images/tmp_09.jpg"
+        }]
+    },
+    "status": 0,
+    "errMsg": ""
+}

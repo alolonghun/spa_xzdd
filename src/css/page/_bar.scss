@@ -1,0 +1,74 @@
+.bar {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    height: 1.306667rem;
+    width: 100%;
+    z-index: 9;
+    background-color: #fff;
+    @include border-top-1px(#ccc);
+    &+.bar-height-fix {
+        position: relative;
+        height: 1.306667rem;
+    }
+    li {
+        float: left;
+        width: 50%;
+        text-align: center;
+        padding: 0.16rem 0px 0px;
+        &.active {
+            p{
+                color: #359dda;
+            }            
+            .icons-bar {
+                &.ico-gh {
+                    background-image: url("../images/icn_gh_active.png");
+                }
+                &.ico-dg {
+                    background-image: url("../images/icn_dg_active.png");
+                }
+                &.ico-my {
+                    background-image: url("../images/icn_my_active.png");
+                }
+                &.ico-dd {
+                    background-image: url("../images/icn_dd_active.png");
+                }
+                &.ico-me {
+                    background-image: url("../images/icn_me_active.png");
+                }
+            }
+        }
+        p {
+            padding-top: .02rem;
+            @include text-variant(#333,
+            0.3333rem,
+            0.266667rem);
+            transform: scale(0.83);
+            color: #8a8a8a;
+        }
+    }
+}
+
+.icons-bar {
+    display: inline-block;
+    width: 0.666667rem;
+    height: 0.666667rem;
+    background-position: 0 0;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    &.ico-gh {
+        background-image: url("../images/icn_gh.png");
+    }
+    &.ico-dg {
+        background-image: url("../images/icn_dg.png");
+    }
+    &.ico-my {
+        background-image: url("../images/icn_my.png");
+    }
+    &.ico-dd {
+        background-image: url("../images/icn_dd.png");
+    }
+    &.ico-me {
+        background-image: url("../images/icn_me.png");
+    }
+}

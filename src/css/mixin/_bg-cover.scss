@@ -1,0 +1,17 @@
+/*
+ *dec:配置背景
+ * */
+
+@mixin bg-cover {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+
+
+@mixin bg-contain {
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}

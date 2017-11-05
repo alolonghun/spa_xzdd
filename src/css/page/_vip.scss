@@ -1,0 +1,133 @@
+/*
+ * @Author: smallke 
+ * @Date: 2017-06-03 13:43:41 
+ * @Last Modified by: smallke
+ * @Last Modified time: 2017-08-30 15:13:56
+ */
+
+.vip-intro {
+    padding: 0.6rem;
+    .title {
+        color: #333333;
+        font-size: 33px;
+        font-weight: 500;
+        line-height: 1;
+    }
+    .dec {
+        padding-top: 0.4rem;
+        color: #545454;
+        font-size: 0.3733rem;
+        font-weight: 400;
+        line-height: 0.8rem;
+    }
+    .price {
+        padding: 0.6667rem 0px 2px;
+        color: #359dda;
+        font-size: 0.3733rem;
+        font-weight: 500;
+        line-height: 1;
+    }
+}
+
+.vip-info,
+.vip-like {
+    .title {
+        padding: 0.6267rem 0.6rem 0.2667rem;
+        color: #333333;
+        font-size: 0.44rem;
+        font-weight: 500;
+        line-height: 1;
+    }
+}
+
+.ele {
+    position: relative;
+    height: 1.4133rem;
+    border-bottom: 1px solid #dddddd;
+    padding: 0px 0.4rem 0px 2.6667rem;
+    .txt {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 2.4rem;
+        height: 1.4133rem;
+        line-height: 1.4133rem;
+        color: #333333;
+        font-size: 0.44rem;
+        font-weight: 400;
+        text-align: right;
+        .require {
+            position: relative;
+            top: 4px;
+            color: #359dda;
+            padding-right: 3px;
+            font-size: 0.44rem;
+        }
+    }
+    .input,
+    .picker {
+        width: 100%;
+        display: block;
+        height: 1.4133rem;
+        line-height: 1.4133rem;
+        color: #333;
+        font-size: 0.44rem;
+        font-weight: 400;
+        border: 0px;
+        padding: 0px;
+        background-color: transparent;
+        appearance: none;
+        -moz-appearance: none;
+        -webkit-appearance: none;        
+        &::-webkit-input-placeholder {
+            color: #a8a8a8;
+            font-size: 0.4rem;
+        }
+    }
+}
+
+.select-wrap {
+    position: relative;
+    &:after {
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        margin-top: -0.1733rem;
+        display: block;
+        content: "";
+        width: 0.1867rem;
+        height: 0.3467rem;
+        font-size: 0px;
+        @include bg-contain;
+        background-image: url($image+'/icn_right.png');
+    }
+}
+
+.choose-list {
+    padding: 0.1733rem 0.4933rem 0.7733rem;
+    background-color: #fff;
+    @include clearfix;
+    .item {
+        float: left;
+        margin: 0.16rem;
+        width: 2.6667rem;
+        height: 1.0267rem;
+        border-radius: 3px;
+        border: 1px solid #ddd;
+        background-color: #fff;
+        text-align: center;
+        color: #333333;
+        font-size: 0.44rem;
+        font-weight: 400;
+        line-height: 1rem;
+        &.active {
+            border-color: #359dda;
+            background-color: #359dda;
+            color: #fff;
+        }
+    }
+}
+
+.submit-wrap {
+    padding-bottom: 1.0667rem;
+}

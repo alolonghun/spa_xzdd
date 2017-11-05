@@ -1,0 +1,23 @@
+/*
+ * @Author: smallke 
+ * @Date: 2017-02-17 10:18:43 
+ * @Last Modified by: smallke
+ * @Last Modified time: 2017-03-14 18:31:22
+ */
+
+
+/*
+*$root_font_size为设计稿宽度 720/10 = 72;
+*小于 rem(8)的还是用px作为单位
+*文档:https://github.com/hbxeagle/rem/blob/master/HD_ADAPTER.md
+*/
+
+$root_font_size:72;
+@function rem($pixels) {
+    @return $pixels / $root_font_size+rem;
+}
+
+@function remNum($pixels) {
+    @return $pixels / $root_font_size;
+}
+
